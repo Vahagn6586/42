@@ -6,7 +6,7 @@
 /*   By: vchiling <vchiling@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/15 14:36:03 by vchiling          #+#    #+#             */
-/*   Updated: 2026/03/16 18:11:26 by vchiling         ###   ########.fr       */
+/*   Updated: 2026/04/21 17:06:39 by vchiling         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,15 @@ typedef struct s_fspec
 	char	fspec;
 	int		(*handler)(va_list);
 }			t_fspec;
+
+int			handle_c(va_list args);
+int			handle_p(va_list args);
+int			handle_s(va_list args);
+int			handle_x(va_list args);
+int			handle_X(va_list args);
+int			handle_u(va_list args);
+int			handle_i_d(va_list args);
+int			handle_percent(va_list args);
 
 int			*ft_strchr(const char *str, char s);
 size_t		ft_strlen(const char *s);
